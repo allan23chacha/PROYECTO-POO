@@ -6,7 +6,7 @@ package ec.edu.espol.proyectopoo;
 
 /**
  *
- * @author Allan
+ * @author Jeremy
  */
 public class Ficha 
 {
