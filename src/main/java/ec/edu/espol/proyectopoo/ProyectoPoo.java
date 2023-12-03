@@ -104,11 +104,91 @@ public class ProyectoPoo {
        {
            System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego Dominous Dominó");
        }
-       
- 
        }
-
-
+        // else de if principal
+       
+       else
+        {
+        System.out.println("Ingrese el nombre del jugador 1");
+        String nombre = sc.next();
+        juego.agregarJugador(nombre);
+        System.out.println("Ingrese el nombre del jugador 2");
+        String nombre2 = sc.next();
+        juego.agregarJugador(nombre2);
+        Jugador jugador1 = juego.getJugadores().get(0);
+        Jugador jugador2 = juego.getJugadores().get(1);
         
-    }
+         while(((jugador1.getMano().size()!=0)&&(jugador2.getMano().size()!=0)) && (condicionfinal && condicionfinal2) )
+        {
+           
+            if(condicionfinal)
+            {
+                System.out.println("Jugador "+jugador1.getNombre()+": Mano --> "+jugador1.imprimirMano());
+            
+                System.out.println("Linea de juego --> "+juego.mostrarLinea());
+                boolean condicion1 = false;
+                boolean jugable1 = juego.manoJugable(jugador1);
+                
+            
+                do{
+                    
+                    if(jugable1)
+                      {
+                        System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
+                        int indice = sc.nextInt();
+                        boolean condc = juego.jugar(jugador1, indice);
+                        condicion1 = condc;
+                      }
+                    else
+                      {   
+                        System.out.println("Upss! Jugador "+jugador1.getNombre()+", tiene una mano no jugable Perdio el juego, intentelo de nuevo");
+                        condicion1 = true;
+                        condicionfinal = false; // indica q el jugador 1 perdio
+                      }
+                 }    
+                 while(!condicion1);
+                  
+                
+            }
+            
+            if(condicionfinal2)
+            {
+                System.out.println("Jugador "+jugador2.getNombre()+": Mano --> "+jugador2.imprimirMano());
+            
+                System.out.println("Linea de juego --> "+juego.mostrarLinea());
+                boolean condicion2 = false;
+                boolean jugable2 = juego.manoJugable(jugador2);
+                
+            
+                do{
+                    
+                    if(jugable2)
+                      {
+                        System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
+                        int indice = sc.nextInt();
+                        boolean condc1 = juego.jugar(jugador2, indice);
+                        condicion2 = condc1;
+                      }
+                    else
+                      {   
+                        System.out.println("Upss! Jugador "+jugador2.getNombre()+", tiene una mano no jugable Perdio el juego, intentelo de nuevo");
+                        condicion2 = true;
+                        condicionfinal = false; // indica q el jugador 1 perdio
+                      }
+                 }    
+                 while(!condicion2);
+            }   
+       }  
+        
+       if(condicionfinal== false)
+       {
+           System.out.println("Felicidades!! "+jugador1.getNombre() +" ha ganado el juego Dominous DominÃ³");
+       }
+       else
+       {
+           System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego Dominous DominÃ³");
+       }   
+       } 
+    }  
 }
+
