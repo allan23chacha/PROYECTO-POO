@@ -6,7 +6,7 @@ package ec.edu.espol.proyectopoo;
 import java.util.ArrayList;
 /**
  *
- * @author Allan
+ * @author Alain
  */
 public class Jugador {
     
