@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.Random;
 /**
  *
- * @author Allan
+ * @author Alain
  */
 public class Utilitaria {
     
