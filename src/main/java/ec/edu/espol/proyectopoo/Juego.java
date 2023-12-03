@@ -8,7 +8,8 @@ import java.util.Scanner;
 import java.util.List;
 import java.util.Random;
 /**
- *
+ * Integrantes del Proyecto: Alain Martínez Vega, Allan Moises Chacha León, Jeremy Rafael Delgado Rodriguez
+ * Link del Github: https://github.com/allan23chacha/PROYECTO-POO/edit/main/src/main/java/ec/edu/espol/proyectopoo/ProyectoPoo.java
  * @author Allan chacha 
  */
 public class Juego {
