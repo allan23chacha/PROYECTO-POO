@@ -6,7 +6,7 @@ package ec.edu.espol.proyectopoo;
 import java.util.Scanner;
 /**
  *
- * @author allan,alain
+ * @author allan,alain,jeremy
  */
 public class ProyectoPoo {
 
