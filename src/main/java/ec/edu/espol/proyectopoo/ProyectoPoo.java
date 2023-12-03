@@ -97,12 +97,12 @@ public class ProyectoPoo {
         
        if(condicionfinal== false)
        {
-           System.out.println("Felicidades!! "+jugador1.getNombre() +" ha ganado el juego Dominous Dominó");
+           System.out.println("Felicidades!! "+jugador1.getNombre() +" ha ganado el juego de Domino");
        }
        
         else
        {
-           System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego Dominous Dominó");
+           System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego de Domino");
        }
        }
         // else de if principal
@@ -182,11 +182,11 @@ public class ProyectoPoo {
         
        if(condicionfinal== false)
        {
-           System.out.println("Felicidades!! "+jugador1.getNombre() +" ha ganado el juego Dominous DominÃ³");
+           System.out.println("Felicidades!! "+jugador1.getNombre() +" ha ganado el juego de Domino");
        }
        else
        {
-           System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego Dominous DominÃ³");
+           System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego de Domino");
        }   
        } 
     }  
