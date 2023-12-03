@@ -8,7 +8,7 @@ package ec.edu.espol.proyectopoo;
  *
  * @author Jeremy
  */
-public class FichaComodin 
+public class FichaComodin extends Ficha
 {
     //CONSTRUCTOR-------------------------------------------
     public FichaComodin()
