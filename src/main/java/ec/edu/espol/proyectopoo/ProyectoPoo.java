@@ -78,13 +78,11 @@ public class ProyectoPoo {
                         System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
                         int indice = sc.nextInt();
                         while(!(indice<=jugador2.getMano().size()))
-                        {
+                          {
                             System.out.println("Fuera de rango el indice que ingreso ");
                             System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
                             indice = sc.nextInt(); 
-                        }
-
-                          
+                          }
                         boolean condc1 = juego.jugar(jugador2, indice);
                         condicion2 = condc1;
                       }
@@ -115,7 +113,7 @@ public class ProyectoPoo {
        }
         // else de if principal
        
-       else
+       else if(modo.toUpperCase().equals("N"))
         {
         System.out.println("Ingrese el nombre del jugador 1");
         String nombre = sc.next();
@@ -145,11 +143,11 @@ public class ProyectoPoo {
                         System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
                         int indice = sc.nextInt();
                         while(!(indice<=jugador1.getMano().size()))
-                        {
+                         {
                             System.out.println("Fuera de rango el indice que ingreso ");
                             System.out.println("Ingrese el indice de ficha para jugar(0 es el primero): ");
                             indice = sc.nextInt(); 
-                        }
+                         }
                         boolean condc = juego.jugar(jugador1, indice);
                         condicion1 = condc;
                       }
@@ -209,6 +207,12 @@ public class ProyectoPoo {
            System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego de Domino");
        }   
        } 
+
+      else
+       {
+           System.out.println("Error no ingreso una opcion correcta vuelva a correr el juego ");
+       }
+            
     }  
 }
 
