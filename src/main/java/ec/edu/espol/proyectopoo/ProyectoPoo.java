@@ -111,7 +111,7 @@ public class ProyectoPoo {
            System.out.println("Felicidades!! "+jugador2.getNombre() +" ha ganado el juego de Domino");
        }
        }
-        // else de if principal
+        // else if y else
        
        else if(modo.toUpperCase().equals("N"))
         {
@@ -155,7 +155,7 @@ public class ProyectoPoo {
                       {   
                         System.out.println("Upss! Jugador "+jugador1.getNombre()+", tiene una mano no jugable Perdio el juego, intentelo de nuevo");
                         condicion1 = true;
-                        condicionfinal = false; // indica q el jugador 1 perdio
+                        condicionfinal2 = false; // indica q el jugador 1 perdio
                       }
                  }    
                  while(!condicion1);
