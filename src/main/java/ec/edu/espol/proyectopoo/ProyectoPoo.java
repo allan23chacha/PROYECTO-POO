@@ -5,7 +5,8 @@
 package ec.edu.espol.proyectopoo;
 import java.util.Scanner;
 /**
- *
+ * Integrantes del Proyecto: Alain Martínez Vega, Allan Moises Chacha León, Jeremy Rafael Delgado Rodriguez
+ * Link del Github: https://github.com/allan23chacha/PROYECTO-POO/edit/main/src/main/java/ec/edu/espol/proyectopoo/ProyectoPoo.java
  * @author allan,alain,jeremy
  */
 public class ProyectoPoo {
